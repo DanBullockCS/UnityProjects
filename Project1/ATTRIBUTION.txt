@@ -1,0 +1,50 @@
+Character Sprite from: (I made the crouch and punching frames)
+----------------------------------------------------------------------------------------------
+https://opengameart.org/content/cowboy
+
+Enemy Character Sprite from:
+----------------------------------------------------------------------------------------------
+https://ingamestudio.itch.io/cowboy-sprites
+
+GUI Sprites from:
+----------------------------------------------------------------------------------------------
+https://opengameart.org/content/cowboy-game-sprites
+
+Desert Platforms from:
+----------------------------------------------------------------------------------------------
+https://opengameart.org/content/platformer-tilesets
+
+Rat/Bat Sprite from:
+----------------------------------------------------------------------------------------------
+https://opengameart.org/content/animated-rat-and-bat
+
+Snake Sprite from:
+----------------------------------------------------------------------------------------------
+https://opengameart.org/content/animated-snake
+
+Spinning Gold Coin Sprite from:
+----------------------------------------------------------------------------------------------
+https://opengameart.org/content/spinning-gold-coin
+
+Girl Sprite from:
+----------------------------------------------------------------------------------------------
+https://opengameart.org/content/girlwoman-in-dress
+
+Girl Laugh .wav from:
+----------------------------------------------------------------------------------------------
+https://opengameart.org/content/voice-clip-packs-for-visual-novels-and-rpgs
+
+Desert Parallax Background from:
+----------------------------------------------------------------------------------------------
+https://assetstore.unity.com/packages/2d/environments/free-parallax-desert-background-127453
+
+Still to get (Sounds):
+----------------------------------------------------------------------------------------------
+- Gun sound
+- Coin sound
+- Death sound
+	- Cowboy
+	- Snake
+	- Rats
+- Wild west music
+- Cowboy voice lines
