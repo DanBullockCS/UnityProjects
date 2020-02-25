@@ -1,50 +1,52 @@
-Character Sprite from: (I made the crouch and punching frames)
-----------------------------------------------------------------------------------------------
+Character Sprite (I made the crouch and punching frames)
 https://opengameart.org/content/cowboy
 
-Enemy Character Sprite from:
-----------------------------------------------------------------------------------------------
+Enemy Character Sprite
 https://ingamestudio.itch.io/cowboy-sprites
 
-GUI Sprites from:
-----------------------------------------------------------------------------------------------
+GUI Sprites
 https://opengameart.org/content/cowboy-game-sprites
 
-Desert Platforms from:
-----------------------------------------------------------------------------------------------
+Desert Platforms
 https://opengameart.org/content/platformer-tilesets
 
-Rat/Bat Sprite from:
-----------------------------------------------------------------------------------------------
+Rat/Bat Sprite
 https://opengameart.org/content/animated-rat-and-bat
 
-Snake Sprite from:
-----------------------------------------------------------------------------------------------
+Snake Sprite
 https://opengameart.org/content/animated-snake
 
-Spinning Gold Coin Sprite from:
-----------------------------------------------------------------------------------------------
+Spinning Gold Coin Sprite
 https://opengameart.org/content/spinning-gold-coin
 
-Girl Sprite from:
-----------------------------------------------------------------------------------------------
+Girl Sprite
 https://opengameart.org/content/girlwoman-in-dress
 
-Girl Laugh .wav from:
-----------------------------------------------------------------------------------------------
+Girl Laugh .wav
 https://opengameart.org/content/voice-clip-packs-for-visual-novels-and-rpgs
 
-Desert Parallax Background from:
-----------------------------------------------------------------------------------------------
+Desert Parallax Background
 https://assetstore.unity.com/packages/2d/environments/free-parallax-desert-background-127453
 
-Still to get (Sounds):
-----------------------------------------------------------------------------------------------
-- Gun sound
-- Coin sound
-- Death sound
-	- Cowboy
-	- Snake
-	- Rats
-- Wild west music
-- Cowboy voice lines
+Coin Sound
+https://freesound.org/people/ProjectsU012/sounds/341695/
+
+Gunshot Sound
+https://opengameart.org/content/gunloop-8bit
+
+Robo-Western by Kevin MacLeod
+Link: https://incompetech.filmmusic.io/song/4298-robo-western
+License: http://creativecommons.org/licenses/by/4.0/
+
+Desert of Lost Souls by Kevin MacLeod
+Link: https://incompetech.filmmusic.io/song/3640-desert-of-lost-souls
+License: http://creativecommons.org/licenses/by/4.0/
+
+Rat sound effect
+https://www.fesliyanstudios.com/royalty-free-sound-effects-download/rat-245
+
+Snake sound effect
+https://www.fesliyanstudios.com/royalty-free-sound-effects-download/rattlesnake-281
+
+Cowboy Death sound effect
+https://opengameart.org/content/11-male-human-paindeath-sounds
