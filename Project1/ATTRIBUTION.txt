@@ -7,8 +7,8 @@ https://ingamestudio.itch.io/cowboy-sprites
 GUI Sprites
 https://opengameart.org/content/cowboy-game-sprites
 
-Desert Platforms
-https://opengameart.org/content/platformer-tilesets
+Desert Platforms and Objects (Pixelized to fit the theme of the game using http://www.retromancers.com/retro/)
+https://opengameart.org/content/free-desert-platformer-tileset
 
 Rat/Bat Sprite
 https://opengameart.org/content/animated-rat-and-bat

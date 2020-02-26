@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// A general class to make the buttons in my menus cycle through the indices of the buttons
+
 public class MenuButtonController : MonoBehaviour {
     public int index;
     [SerializeField] int maxIndex;

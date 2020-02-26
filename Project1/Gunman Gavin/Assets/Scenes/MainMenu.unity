@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.56200004}
-  m_AnchoredPosition: {x: 26.8, y: -625.9}
-  m_SizeDelta: {x: 1143.5, y: 520.5}
+  m_AnchoredPosition: {x: 44.00003, y: -622.8124}
+  m_SizeDelta: {x: 1143.5, y: 518.87524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &131358429
 MonoBehaviour:
@@ -227,7 +227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 45, y: 46.4}
+  m_AnchoredPosition: {x: 26.799911, y: 34}
   m_SizeDelta: {x: 1620.3, y: 793.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154534549
@@ -1253,7 +1253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.6, y: -311}
+  m_AnchoredPosition: {x: 26.799911, y: -305.00003}
   m_SizeDelta: {x: 1288.6, y: 647.7}
   m_Pivot: {x: 0.5, y: 0.40901324}
 --- !u!114 &1253996288
@@ -1377,7 +1377,6 @@ GameObject:
   - component: {fileID: 1894884115}
   - component: {fileID: 1894884114}
   - component: {fileID: 1894884113}
-  - component: {fileID: 1894884117}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1418,7 +1417,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 3840, y: 2160}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1472,18 +1471,3 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1894884117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894884112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46f4ab6dffd495740918ea690b9d7f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 0
-  maxIndex: 0
-  isKeyDown: 0
