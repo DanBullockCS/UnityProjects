@@ -3,7 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(CharacterController2D))]
 public class PlayerInput : MonoBehaviour {
-    public float runSpeed = 40f;
+    public float runSpeed = 50f;
 
     private CharacterController2D controller;
     private Animator animator;

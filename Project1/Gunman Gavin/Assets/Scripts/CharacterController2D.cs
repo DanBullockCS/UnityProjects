@@ -1,19 +1,18 @@
 ﻿// Retrieved From: https://github.com/randyfortier/CSCI4160U_Examples/blob/master/03a_2D_Levels/Assets/CharacterController2D.cs
-
 using UnityEngine;
 using UnityEngine.Events;
 
 public class CharacterController2D : MonoBehaviour {
 
     [Header("General")]
-    [SerializeField] private float movementSpeed = 10f;
+    [SerializeField] private float movementSpeed = 5f;
     [Range(0, .3f)] [SerializeField] private float movementSmoothing = .05f;
     [SerializeField] private LayerMask groundLayers;
     public float speed = 0.0f;
 
     [Header("Jumping")]
     [SerializeField] private bool canAirControl = true;
-    [SerializeField] private float jumpForce = 310f;
+    [SerializeField] private float jumpForce = 235f;
     [SerializeField] private Transform groundPosition;
     public bool isGrounded;
 
@@ -46,7 +45,7 @@ public class CharacterController2D : MonoBehaviour {
 
         // find any ground layer colliders closer than the ground position
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundPosition.position, groundedRadius, groundLayers);
-        Debug.Log("Overlapping colliders: " + colliders.Length);
+        //Debug.Log("Overlapping colliders: " + colliders.Length);
         for (int i = 0; i < colliders.Length; i++) {
             // if any of the colliders are not the object iself, it must be the ground
             if (colliders[i].gameObject != gameObject) {

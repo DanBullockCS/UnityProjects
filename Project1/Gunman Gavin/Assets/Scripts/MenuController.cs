@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour {
-    [SerializeField] MenuButtonController menuButtonController;
-    [SerializeField] Animator animator;
-    [SerializeField] int thisIndex;
-    [SerializeField] GameObject selector; // The highlighted rectangle for each object
+    [SerializeField] MenuButtonController menuButtonController = null;
+    [SerializeField] Animator animator = null;
+    [SerializeField] int thisIndex = 0;
+    [SerializeField] GameObject selector = null; // The highlighted rectangle for each object
 
-    string sceneName;
+    private string sceneName = "";
+    public PauseMenu pauseMenu; // Passed so the user can resume the game.
 
     void Start() {
         // Get the current scene so that I can make buttons do different things on different scenes
@@ -39,6 +40,13 @@ public class MenuController : MonoBehaviour {
                 // Change the scene from Settings
                 } else if (thisIndex == 1 && sceneName == "Settings") {
                     GotoMainMenu();
+                // Change the scene from Pause menu
+                } else if (thisIndex == 0 && sceneName == "RunGame") {
+                    pauseMenu.Resume();
+                } else if (thisIndex == 1 && sceneName == "RunGame") {
+                    GotoMainMenu();
+                } else if (thisIndex == 2 && sceneName == "RunGame") {
+                    QuitGame();
                 }
             } else if (animator.GetBool("pressed")) {
                 animator.SetBool("pressed", false);
