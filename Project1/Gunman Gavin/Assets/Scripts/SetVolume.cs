@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Setting the volume of the game via the Mixer and Audio Slider
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 

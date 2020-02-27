@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Control all the menus in the game
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

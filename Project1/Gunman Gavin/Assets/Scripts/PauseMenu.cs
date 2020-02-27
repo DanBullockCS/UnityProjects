@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Controling the Pause Menu during the RunGame scene
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

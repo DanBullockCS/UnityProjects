@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Controls the collection and destruction of coins
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
