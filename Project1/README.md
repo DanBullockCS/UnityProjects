@@ -28,7 +28,7 @@
 
 ## TODO
 - Game state loading/saving
+### Time Permitting:
 - Pause screen still kinda meh
-- Sound effects
-- End screen when you win
 - Stop rapid fire
+- Sound effects

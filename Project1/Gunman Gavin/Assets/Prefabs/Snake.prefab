@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1277222559033178132}
   - component: {fileID: 1277222559033178153}
   - component: {fileID: 4970971210218271782}
+  - component: {fileID: 69715001}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Enemy
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1277222559033178135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.38, y: -3.47, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2, y: 2.2254019, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -131,7 +132,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.007820129, y: 0.05}
+  m_Offset: {x: 0.007820129, y: 0.02}
   m_Size: {x: 0.4842682, y: 0.0001}
   m_Direction: 0
 --- !u!114 &1277222559033178153
@@ -160,5 +161,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b393e17cddf00b439013e38bbbc915f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  deathEffect: {fileID: 0}
+  health: 30
+--- !u!95 &69715001
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277222559033178135}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 56895fb5c8fdc684d86ebee7b5e86f4e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

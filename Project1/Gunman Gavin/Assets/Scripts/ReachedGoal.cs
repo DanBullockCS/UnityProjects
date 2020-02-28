@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class ReachedGoal : MonoBehaviour {
     private GameObject playerObj = null;
-    private float goalPos = 102;
+    private float goalPos = 112;
 
     void Start() {
         if (playerObj == null) {
@@ -20,7 +20,7 @@ public class ReachedGoal : MonoBehaviour {
         if (playerObj.transform.position.x >= goalPos) {
             Debug.Log("Reached Goal");
             // TODO Change this to victory screen
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Winner");
         }
     }
 }

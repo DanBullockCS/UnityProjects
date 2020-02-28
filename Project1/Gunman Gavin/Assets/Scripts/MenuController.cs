@@ -48,6 +48,11 @@ public class MenuController : MonoBehaviour {
                     GotoMainMenu();
                 } else if (thisIndex == 2 && sceneName == "RunGame") {
                     QuitGame();
+                // Change the scene from Winner screen
+                } else if (thisIndex == 0 && sceneName == "Winner") {
+                    GotoGame();
+                } else if (thisIndex == 1 && sceneName == "Winner") {
+                    GotoMainMenu();
                 }
             } else if (animator.GetBool("pressed")) {
                 animator.SetBool("pressed", false);

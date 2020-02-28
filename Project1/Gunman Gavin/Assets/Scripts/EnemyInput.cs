@@ -33,13 +33,5 @@ public class EnemyInput : MonoBehaviour {
             yield return null;
         }
     }
-        
-    void Update() {
-        // If enemy cowboy dies, get rid of the boxes behind him
-        if (GameObject.Find("EnemyCowboy") == null) {
-            GameObject.Find("Backdoor").SetActive(false);
-        }
-    }
- 
 
 }

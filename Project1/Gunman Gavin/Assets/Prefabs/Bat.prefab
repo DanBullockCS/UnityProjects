@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1277222559033178132}
   - component: {fileID: 1277222559033178153}
   - component: {fileID: -6109187666774411174}
+  - component: {fileID: 844403380}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemy
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1277222559033178135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.38, y: -3.58, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -118,7 +119,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!70 &1277222559033178132
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4fd15307c0226438158efd8ca68dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointB: {x: 7.08, y: -3.58, z: 0}
+  pointB: {x: 55.19, y: -1.42, z: 0}
   pointA: {x: 0, y: 0, z: 0}
 --- !u!114 &-6109187666774411174
 MonoBehaviour:
@@ -161,5 +162,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b393e17cddf00b439013e38bbbc915f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  deathEffect: {fileID: 0}
+  health: 30
+--- !u!95 &844403380
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277222559033178135}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe7b1d125c25c63479d891e50f51af55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
