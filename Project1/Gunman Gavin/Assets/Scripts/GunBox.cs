@@ -9,7 +9,6 @@ public class GunBox : MonoBehaviour {
     [SerializeField] GameObject WeaponSlot = null; // Gun slot
     [SerializeField] GameObject HandSlot = null; // Hand slot
 
-
     private void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag.Equals("Player")) {
             // Switch to gun

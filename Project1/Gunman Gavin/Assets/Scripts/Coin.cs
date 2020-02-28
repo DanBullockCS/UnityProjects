@@ -4,10 +4,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Coin : MonoBehaviour {
+    public AudioClip coinSound;
+    AudioSource aScorce;
+    GameObject obj;
+
+    void Start() {
+        obj = GameObject.Find("CoinSound");
+        if (obj != null)
+            aScorce = obj.GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag.Equals("Player")) {
-            // Add to some sort of counter later
-            //SoundManagerScript.PlaySound("coinPickup");
+            // Play coin sound
+            aScorce.clip = coinSound;
+            aScorce.Play();
+            // Get the coin that was collected, add it and destroy it
             GetCoin(col);
             Destroy(gameObject);
         }

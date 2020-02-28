@@ -6,7 +6,8 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour {
     public float runSpeed = 50f;
     public Transform firePt;
-    public GameObject bulletPrefab;
+    public GameObject bulletLeftPrefab;
+    public GameObject bulletRightPrefab;
 
     private CharacterController2D controller;
     private Animator animator;
@@ -26,8 +27,11 @@ public class PlayerInput : MonoBehaviour {
             jumping = true;
         }
         if (Input.GetButtonDown("Fire1")) {
-            
-            Shoot();
+            if (animator.GetBool("hasGun") == true) {
+                Shoot();
+            }
+        } else if (Input.GetButtonDown("Fire2")) {
+            animator.SetTrigger("punch");
         }
 
         animator.SetFloat("Speed", controller.speed);
@@ -41,6 +45,11 @@ public class PlayerInput : MonoBehaviour {
 
     void Shoot() {
         // Shooting logic
-        Instantiate(bulletPrefab, firePt.position, firePt.rotation);
+        if (gameObject.transform.localScale.x == 1) {
+            Instantiate(bulletRightPrefab, firePt.position, firePt.rotation);
+        } else if(gameObject.transform.localScale.x == -1) {
+            Instantiate(bulletLeftPrefab, firePt.position, firePt.rotation);
+        }
+
     }
 }

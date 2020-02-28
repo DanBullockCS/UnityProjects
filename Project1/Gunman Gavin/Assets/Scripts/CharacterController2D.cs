@@ -17,8 +17,7 @@ public class CharacterController2D : MonoBehaviour {
     [SerializeField] private Transform groundPosition;
     public bool isGrounded;
 
-
-    private bool isFacingRight = true;
+    public bool isFacingRight = true;
 
     const float groundedRadius = .1f;
     const float ceilingRadius = .1f;
