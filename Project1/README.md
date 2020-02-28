@@ -18,13 +18,13 @@
 - The game was made for the 4k resolution of 3840x2160
 
 ## Objective Requirements
-[x] (3 marks) Level creation
-[x] (3 marks) Sprite animation (via sprite sheets and/or rigging)
-[x] (1.5 marks) Physics/collision system
-[x] (1 mark) User input
-[ ] (1.5 marks) Game state loading/saving
-[x] (1 mark) Menus
-[x] (2 marks) HUD and other gameplay interfaces (e.g. health bars) 
+- [x] (3 marks) Level creation
+- [x] (3 marks) Sprite animation (via sprite sheets and/or rigging)
+- [x] (1.5 marks) Physics/collision system
+- [x] (1 mark) User input
+- [ ] (1.5 marks) Game state loading/saving
+- [x] (1 mark) Menus
+- [x] (2 marks) HUD and other gameplay interfaces (e.g. health bars) 
 
 ## TODO
 - Game state loading/saving
