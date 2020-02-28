@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Music
   - Coin
+  - GunBox
+  - Enemy
   layers:
   - Default
   - TransparentFX

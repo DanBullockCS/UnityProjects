@@ -1,10 +1,12 @@
-﻿// Retrieved From: https://github.com/randyfortier/CSCI4160U_Examples/blob/master/03a_2D_Levels/Assets/PlayerInput.cs
+﻿// Originally Retrieved From: https://github.com/randyfortier/CSCI4160U_Examples/blob/master/03a_2D_Levels/Assets/PlayerInput.cs
 // Controls Player Input.
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController2D))]
 public class PlayerInput : MonoBehaviour {
     public float runSpeed = 50f;
+    public Transform firePt;
+    public GameObject bulletPrefab;
 
     private CharacterController2D controller;
     private Animator animator;
@@ -23,6 +25,10 @@ public class PlayerInput : MonoBehaviour {
         if (Input.GetButtonDown("Jump")) {
             jumping = true;
         }
+        if (Input.GetButtonDown("Fire1")) {
+            
+            Shoot();
+        }
 
         animator.SetFloat("Speed", controller.speed);
         animator.SetBool("Jumping", !controller.isGrounded);
@@ -31,5 +37,10 @@ public class PlayerInput : MonoBehaviour {
     void FixedUpdate() {
         controller.Move(horizontalMove * Time.fixedDeltaTime, jumping);
         jumping = false;
+    }
+
+    void Shoot() {
+        // Shooting logic
+        Instantiate(bulletPrefab, firePt.position, firePt.rotation);
     }
 }

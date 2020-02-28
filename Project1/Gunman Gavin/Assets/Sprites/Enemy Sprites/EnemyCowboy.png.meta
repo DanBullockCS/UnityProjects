@@ -1,7 +1,49 @@
 fileFormatVersion: 2
 guid: 18433386761b5a04d9ea214fa59cb536
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6658555716483463191
+    second: EnemyCowboy_0
+  - first:
+      213: -7131796287060084058
+    second: EnemyCowboy_1
+  - first:
+      213: 1212384506227908680
+    second: EnemyCowboy_2
+  - first:
+      213: -1029373572897444690
+    second: EnemyCowboy_3
+  - first:
+      213: -1266485643006010402
+    second: EnemyCowboy_4
+  - first:
+      213: 2831867918252568355
+    second: EnemyCowboy_5
+  - first:
+      213: -1556498412965806266
+    second: EnemyCowboy_6
+  - first:
+      213: 1973480521292466103
+    second: EnemyCowboy_7
+  - first:
+      213: -6275618081403137
+    second: EnemyCowboy_8
+  - first:
+      213: -2572996868762079505
+    second: EnemyCowboy_9
+  - first:
+      213: 5557788445435905543
+    second: EnemyCowboy_10
+  - first:
+      213: -6192932905093595853
+    second: EnemyCowboy_11
+  - first:
+      213: 8024629571036448033
+    second: EnemyCowboy_12
+  - first:
+      213: -7714479665006856863
+    second: EnemyCowboy_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +82,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +112,294 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EnemyCowboy_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 67
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee17ec2f14e4904795d4281a55d2cbc
+      internalID: 6658555716483463191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 67
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d3cae8e6263cb4ca2efb1eaa156a58
+      internalID: -7131796287060084058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 67
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5795d435498ec06458594cbcc90941a0
+      internalID: 1212384506227908680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 67
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4876b02ca0538374eb608f5211de922f
+      internalID: -1029373572897444690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 66
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab52e438f0d85f4b90435d2d40f0639
+      internalID: -1266485643006010402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 37
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6ae00bb8e5a6948a46fd7003c9e99b
+      internalID: 2831867918252568355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 37
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31eb78f3891fd114bb1a7576702ab948
+      internalID: -1556498412965806266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_7
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 37
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff2c3e5205f80f4cac40764a7051f4d
+      internalID: 1973480521292466103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 37
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12793780c37387489e5f733a3db0359
+      internalID: -6275618081403137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e631fa50a28cfa45816b6d16b719d3c
+      internalID: -2572996868762079505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15148c8443c4a0646b1d829d9d340e6d
+      internalID: 5557788445435905543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 8
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e759f5733afdd744bbeccad54f07602
+      internalID: -6192932905093595853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyCowboy_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 8
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e9880af32c6344e9e7ec637a402d9d
+      internalID: 8024629571036448033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
