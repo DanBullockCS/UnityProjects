@@ -19,7 +19,9 @@ public class HP : MonoBehaviour {
 
     public void Damage(int amount) {
         // Player took damage, play hurt sound effect
-        aSource.Play();
+        if (amount > 0) {
+            aSource.Play();
+        }
 
         hitPoints += amount;
         // Stop HP from going more than bar lets.
