@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2865891dba52d24d8255b91955cf33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ratSound: {fileID: 8300000, guid: d4b0a52d137e378479dd3a886766557d, type: 3}
+  snakeSound: {fileID: 8300000, guid: bdc4e731fd3cce24e9f71f06e5eb807d, type: 3}
 --- !u!1107 &-6095721747299725333
 AnimatorStateMachine:
   serializedVersion: 5
@@ -26,7 +28,7 @@ AnimatorStateMachine:
     m_Position: {x: 340, y: 40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8411184444542964785}
-    m_Position: {x: 340, y: 160, z: 0}
+    m_Position: {x: 340, y: 170, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

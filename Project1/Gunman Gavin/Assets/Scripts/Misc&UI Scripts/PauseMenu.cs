@@ -1,4 +1,5 @@
 ﻿// Controling the Pause Menu during the RunGame scene
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,7 @@ public class PauseMenu : MonoBehaviour {
     }
 
     void Pause() {
-        //Time.timeScale = 0f; // This freezetime was causing errors
+        //Time.timeScale = 0f; // This freezetime was causing errors with the menu buttons as they are controlled by the WASD/Arrow Keys
         pauseCanvas.SetActive(true);
         isPaused = true;
     }

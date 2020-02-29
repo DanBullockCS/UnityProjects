@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Counts coins and displays the counter in the HUD
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

@@ -39,6 +39,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2865891dba52d24d8255b91955cf33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ratSound: {fileID: 8300000, guid: d4b0a52d137e378479dd3a886766557d, type: 3}
+  snakeSound: {fileID: 8300000, guid: bdc4e731fd3cce24e9f71f06e5eb807d, type: 3}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -53,7 +55,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer

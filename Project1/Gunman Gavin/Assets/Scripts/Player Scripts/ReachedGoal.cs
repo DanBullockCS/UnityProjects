@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class ReachedGoal : MonoBehaviour {
     private GameObject playerObj = null;
-    private float goalPos = 112;
+    public GameObject EnemyCowboy;
+    private float goalPos = 112f;
+    private float bossPos = 88.47997f;
 
     void Start() {
         if (playerObj == null) {
@@ -16,16 +18,16 @@ public class ReachedGoal : MonoBehaviour {
     }
 
     void Update() {
+        if (EnemyCowboy != null) {
+            // User is near boss spawn boss
+            if (playerObj.transform.position.x >= bossPos) {
+                EnemyCowboy.SetActive(true);
+            }
+        }
+
         // User has reached goal
         if (playerObj.transform.position.x >= goalPos) {
-            StartCoroutine(GameOver());
-            Time.timeScale = 1f;
             SceneManager.LoadScene("Winner");
         }
-    }
-
-    IEnumerator GameOver() {
-        Time.timeScale = 0f;
-        yield return new WaitForSeconds(5);
     }
 }

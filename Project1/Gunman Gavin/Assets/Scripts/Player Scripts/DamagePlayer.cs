@@ -1,4 +1,5 @@
 ﻿// Check if the player hit some enemy or cacti and take away their hp
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

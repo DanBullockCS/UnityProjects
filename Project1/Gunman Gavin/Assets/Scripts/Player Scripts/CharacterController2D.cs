@@ -1,5 +1,6 @@
 ﻿// Controls the characters movements (jumping, running etc)
 // Retrieved From: https://github.com/randyfortier/CSCI4160U_Examples/blob/master/03a_2D_Levels/Assets/CharacterController2D.cs
+
 using UnityEngine;
 using UnityEngine.Events;
 

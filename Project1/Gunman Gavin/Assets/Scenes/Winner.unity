@@ -449,7 +449,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c2382f262030e8344b0d2c14d92c392d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b22f58686ca4dce49b1236b6c9326fd4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -624,6 +624,8 @@ MonoBehaviour:
   animator: {fileID: 822124777}
   thisIndex: 0
   selector: {fileID: 998491567}
+  saveButton: {fileID: 0}
+  loadButton: {fileID: 0}
   pauseMenu: {fileID: 0}
 --- !u!114 &822124779
 MonoBehaviour:
@@ -1113,6 +1115,8 @@ MonoBehaviour:
   animator: {fileID: 1361629975}
   thisIndex: 1
   selector: {fileID: 104596974}
+  saveButton: {fileID: 0}
+  loadButton: {fileID: 0}
   pauseMenu: {fileID: 0}
 --- !u!114 &1361629977
 MonoBehaviour:

@@ -1,5 +1,6 @@
 ﻿// The background Parallax effect controlled here
 // Parallax Effect from Tutorial: https://www.youtube.com/watch?v=zit45k6CUMk
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,5 +1,5 @@
 ﻿// Create bullet and shoot it from tutorial: https://www.youtube.com/watch?v=wkKsl1Mfp5M
-
+// This is a bullet that is shooting the left, therefore -transform.right
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,4 +1,5 @@
 ﻿// Camera follows player
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
