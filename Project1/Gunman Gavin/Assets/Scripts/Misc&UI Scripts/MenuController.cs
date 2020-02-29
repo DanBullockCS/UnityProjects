@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour {
@@ -9,6 +10,9 @@ public class MenuController : MonoBehaviour {
     [SerializeField] Animator animator = null;
     [SerializeField] int thisIndex = 0;
     [SerializeField] GameObject selector = null; // The highlighted rectangle for each object
+    // The saving and loading buttons in the pause menu
+    [SerializeField] Button saveButton = null; 
+    [SerializeField] Button loadButton = null;
 
     private string sceneName = "";
     public PauseMenu pauseMenu; // Passed so the user can resume the game.
@@ -45,10 +49,14 @@ public class MenuController : MonoBehaviour {
                 } else if (thisIndex == 0 && sceneName == "RunGame") {
                     pauseMenu.Resume();
                 } else if (thisIndex == 1 && sceneName == "RunGame") {
-                    GotoMainMenu();
+                    saveButton.onClick.Invoke();
                 } else if (thisIndex == 2 && sceneName == "RunGame") {
+                    loadButton.onClick.Invoke();
+                } else if (thisIndex == 3 && sceneName == "RunGame") {
+                    GotoMainMenu();
+                } else if (thisIndex == 4 && sceneName == "RunGame") {
                     QuitGame();
-                // Change the scene from Winner screen
+                    // Change the scene from Winner screen
                 } else if (thisIndex == 0 && sceneName == "Winner") {
                     GotoGame();
                 } else if (thisIndex == 1 && sceneName == "Winner") {

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MenuButtonController : MonoBehaviour {
     public int index;
-    [SerializeField] int maxIndex;
+    [SerializeField] int maxIndex = 0;
     [SerializeField] bool isKeyDown;
 
     // Checks which button we are currently highlighting so that user can click on them

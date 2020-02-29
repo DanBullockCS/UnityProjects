@@ -13,8 +13,8 @@ public class DamagePlayer : MonoBehaviour {
             HP hp = col.gameObject.GetComponent<HP>();
             EnemyHP eHP = gameObject.GetComponent<EnemyHP>();
 
+            // Never really got this punching to work properly.
             if (objectAnimator.GetBool("punch") == false) {
-                Debug.Log("Got Hit by" + col.gameObject.name);
                 hp.Damage(10);
             } else {
                 Debug.Log("punched enemy");

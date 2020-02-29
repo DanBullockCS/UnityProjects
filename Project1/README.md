@@ -19,16 +19,26 @@
 
 ## Objective Requirements
 - [x] (3 marks) Level creation
-- [x] (3 marks) Sprite animation (via sprite sheets and/or rigging)
-- [x] (1.5 marks) Physics/collision system
-- [x] (1 mark) User input
-- [ ] (1.5 marks) Game state loading/saving
-- [x] (1 mark) Menus
-- [x] (2 marks) HUD and other gameplay interfaces (e.g. health bars) 
+- Level created with 8bitified sprites and tilemaps
 
-## TODO
-- Game state loading/saving
+- [x] (3 marks) Sprite animation (via sprite sheets and/or rigging)
+- Player and enemys move.
+
+- [x] (1.5 marks) Physics/collision system
+- Player has been given frictionless material to move around nicer, bullets give dmg and disappear on impact
+
+- [x] (1 mark) User input
+- Use WASD to move, O to shoot when you pick up the gun from the gun crate, and P to punch (punching not working)
+
+- [x] (1.5 marks) Game state loading/saving
+- Can be found in the pause menu when you press esc
+
+- [x] (1 mark) Menus
+- Can be navigated with WASD or arrow keys, audio slider in menu only works with mouse.
+
+- [x] (2 marks) HUD and other gameplay interfaces (e.g. health bars) 
+- Health bar and coin counter appear in game.
+
 ### Time Permitting:
-- Pause screen still kinda meh
-- Stop rapid fire
+- Pause screen does not pause game, because that would pause the movement of the WASD buttons on the pause menu
 - Sound effects
