@@ -18,6 +18,7 @@
 ## Notes
 - The game was made for the 4k resolution of 3840x2160, although resizes accordingly
 - Pause screen does not pause game, because that would pause the movement of the WASD buttons on the pause menu
+- Game is meant to start on the "MainMenu" scene, the uploaded code might not start there however.
 
 ## Objective Requirements
 - [x] (3 marks) Level creation
