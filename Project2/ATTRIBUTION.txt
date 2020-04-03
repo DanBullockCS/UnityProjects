@@ -1,0 +1,8 @@
+Aquarium:
+https://assetstore.unity.com/packages/3d/props/furniture/aquarium-19979
+
+Fish:
+https://assetstore.unity.com/packages/3d/characters/animals/colorful-sea-fish-pack-12389
+
+Casino Font:
+https://www.dafont.com/casino-2.font
