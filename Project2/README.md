@@ -1,4 +1,4 @@
 # Project2 - 3D Project
-Potential ideas:
-- Tiki Bowling
-- Target practice shooter
+
+## Casinodano
+- A 3D Casino game currently in development.

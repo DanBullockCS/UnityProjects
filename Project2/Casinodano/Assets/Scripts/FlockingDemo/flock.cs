@@ -6,11 +6,9 @@ using UnityEngine;
 
 public class flock : MonoBehaviour {
 
-    public float speed = 0.001f;
+    public float speed = 0.1f;
     float rotationSpeed = 4.0f;
-    Vector3 averageHeading;
-    Vector3 averagePosition;
-    float neighbourDistance = 3.0f;
+    float neighbourDistance = 0.25f; // The distance the fish will flock within
 
     bool turning = false;
 
@@ -20,13 +18,14 @@ public class flock : MonoBehaviour {
     }
 
     void Update() {
-        if (Vector3.Distance(transform.position, new Vector3(44.0f, 3.70f, -129.0f)) >= globalFlock.tankSize) {
+        if (Vector3.Distance(transform.position, new Vector3(44.0f, 3.70f, -129.0f)) >= globalFlock.tankSize.x) {
             turning = true;
         } else {
             turning = false;
         }
 
         if (turning) {
+            // Do a rotation and give it another random speed
             Vector3 direction = new Vector3(44.0f, 3.70f, -129.0f) - transform.position;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotationSpeed * Time.deltaTime);
             speed = Random.Range(0.7f, 2); // Change speed again
@@ -42,8 +41,8 @@ public class flock : MonoBehaviour {
         GameObject[] gameObjs;
         gameObjs = globalFlock.fishyArr;
 
-        Vector3 vCenter = Vector3.zero;
-        Vector3 vAvoid = Vector3.zero;
+        Vector3 vCenter = Vector3.zero; // center of group
+        Vector3 vAvoid = Vector3.zero;  // avoidance vector to avoid hitting nearby fish
         float gSpeed = 0.1f;
         float dist;
         Vector3 goalPos = globalFlock.goalPos;
@@ -51,7 +50,7 @@ public class flock : MonoBehaviour {
         // Calculating groupSize based on what agents are within neighbourDistance
         int groupSize = 0;
         foreach (GameObject obj in gameObjs) {
-            if(obj != this.gameObject) {
+            if (obj != this.gameObject) {
                 dist = Vector3.Distance(obj.transform.position, this.transform.position);
                 if (dist <= neighbourDistance) {
                     // Then other agent in a neighbour, add to group
@@ -59,7 +58,7 @@ public class flock : MonoBehaviour {
                     groupSize++;
 
                     // If other agent is less than 1.0f away, avoid the collision
-                    if (dist < 1.0f) {
+                    if (dist < 0.5f) {
                         vAvoid += this.transform.position - obj.transform.position;
                     }
 
