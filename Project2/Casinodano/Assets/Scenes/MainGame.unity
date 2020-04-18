@@ -192,7 +192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 52687202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RoadBlock1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 84654556}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,6 +464,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_Name
       value: RoadBlock_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1146,6 +1150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_C
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.657787
@@ -1402,6 +1410,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  groundCollider: {fileID: 446659941}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!143 &312045704
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1428,10 +1441,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312045702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41, y: 2.5, z: -132}
+  m_LocalPosition: {x: 43, y: 2.57, z: -195}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
+  - {fileID: 446659941}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2160,13 +2174,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parking_Enterence_A
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10897b964fb3f3548b477b5fcabb6933, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10897b964fb3f3548b477b5fcabb6933, type: 3}
       propertyPath: m_LocalPosition.x
       value: -98.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10897b964fb3f3548b477b5fcabb6933, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24
+      value: 24.000002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10897b964fb3f3548b477b5fcabb6933, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2216,6 +2234,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_Name
       value: Park_Sidewalk_Double
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2406,6 +2428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.67905
@@ -2458,6 +2484,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 442455417}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &446659940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 446659941}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &446659941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446659940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 312045705}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &474146087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5313fa10438f9423a805501d59f71e9f,
@@ -3018,6 +3074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parking_Streight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.800003
@@ -3075,6 +3135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road_Crosswalk
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 38879fb80d2211342b5c6e8ca726f2f5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38879fb80d2211342b5c6e8ca726f2f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -98.8
@@ -3131,6 +3195,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_Name
       value: Parking_Streight (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3254,7 +3322,7 @@ GameObject:
   - component: {fileID: 619017406}
   - component: {fileID: 619017405}
   - component: {fileID: 619017404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3545,7 +3613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619017403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3624,6 +3692,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_Name
       value: RoadBlock_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3907,6 +3979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.66481
@@ -3969,6 +4045,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_Name
       value: RoadBlock_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4326,7 +4406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 866340453}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4357,6 +4437,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_Name
       value: RoadBlock_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4593,6 +4677,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5bf814eaa7fc1114281059f1f35bd03c, type: 3}
       propertyPath: m_Name
       value: RoadM_LR
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5bf814eaa7fc1114281059f1f35bd03c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5bf814eaa7fc1114281059f1f35bd03c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5202,7 +5290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980991175}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5435,6 +5523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.66481
@@ -5560,6 +5652,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_Name
       value: Parking_Streight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5750,6 +5846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.67905
@@ -5812,6 +5912,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_Name
       value: Park_Sidewalk_Double (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6146,6 +6250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_D
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.62747
@@ -6443,6 +6551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parking_Center_A
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8f9746425331e894b8e84f6845555f2f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8f9746425331e894b8e84f6845555f2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -98.8
@@ -6725,6 +6837,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 28d375a433cc78c4fa3db00df795f14d, type: 3}
       propertyPath: m_Name
       value: Hidrant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 28d375a433cc78c4fa3db00df795f14d, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 28d375a433cc78c4fa3db00df795f14d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7167,6 +7283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadM_Stop
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3a10f356a080e464492ad7f78652406e, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3a10f356a080e464492ad7f78652406e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53
@@ -7222,7 +7342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1382251693}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RoadBlock2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7337,6 +7457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_B (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.701492
@@ -7399,6 +7523,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_Name
       value: RoadBlock_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8298,6 +8426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Park_Sidewalk_Double (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30
@@ -8360,6 +8492,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_Name
       value: Parking_Streight
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8481,6 +8617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parking_Streight (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.800003
@@ -8537,6 +8677,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_Name
       value: Park_Sidewalk_Double (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8760,7 +8904,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1582767919}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8790,7 +8934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1584871793}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8830,7 +8974,7 @@ GameObject:
   - component: {fileID: 1619661473}
   - component: {fileID: 1619661472}
   - component: {fileID: 1619661471}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CasinoFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9138,6 +9282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_D
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.62747
@@ -9201,6 +9349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Park_Sidewalk_Double (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90
@@ -9257,6 +9409,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_Name
       value: Park_Sidewalk_Double (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9317,7 +9473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1658105778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sidewalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9366,7 +9522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1692499516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Street
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9478,6 +9634,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_Name
       value: RoadBlock_B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10020,6 +10180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_C
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.657787
@@ -10339,7 +10503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1801923698}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10995,7 +11159,7 @@ GameObject:
   - component: {fileID: 1895512536}
   - component: {fileID: 1895512535}
   m_Layer: 0
-  m_Name: Point Light (TESTING ONLY)
+  m_Name: Ceiling Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11069,7 +11233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895512534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38, y: 11, z: -118}
+  m_LocalPosition: {x: 36, y: 11, z: -118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11459,6 +11623,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
       propertyPath: m_Name
       value: Road_End_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13575,6 +13743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Park_Sidewalk_Double (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60
@@ -13694,6 +13866,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_Name
       value: Park_Sidewalk_Double (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002df49370ca7814499cb40ed86c61da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13861,6 +14037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_B
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68168b1d080f7ff4da5ac899be391c39, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.66697
@@ -13993,6 +14173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parking_Streight (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d790c5a0bec05048bcbf549fc6ed8f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.199997
@@ -14049,6 +14233,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: fd7164a47a96e744592996880dade761, type: 3}
       propertyPath: m_Name
       value: Parking_Corner_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fd7164a47a96e744592996880dade761, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fd7164a47a96e744592996880dade761, type: 3}
       propertyPath: m_LocalPosition.x
