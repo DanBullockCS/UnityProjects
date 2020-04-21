@@ -113,7 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 1
-  controlID: 91
+  controlID: 39
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 92
+  controlID: 40
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 93
+  controlID: 41
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -410,9 +410,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: be260000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 72fbffffe8360000
+      m_SelectedIDs: 90360000
+      m_LastClickedID: 13968
+      m_ExpandedIDs: 72fbffffb2360000fe370000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1965.5397, y: 1110.8015, z: -427.5}
+    m_Target: {x: 1938.108, y: 1120.2118, z: -477.1436}
     speed: 2
-    m_Value: {x: 1965.5397, y: 1110.8015, z: -427.5}
+    m_Value: {x: 1943.4236, y: 1119.1993, z: -468.09924}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -507,9 +507,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3017.4739
+    m_Target: 2396.9578
     speed: 2
-    m_Value: 3017.4739
+    m_Value: 2509.9033
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -603,19 +603,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Coin Scripts
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/Scripts/Coin Scripts
+  - Assets/Scripts
   m_LastFoldersGridSize: 68
   m_LastProjectPath: D:\UnityProjects\UnityProjects\Project1\Gunman Gavin
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: ee340000
-    m_LastClickedID: 13550
+    m_SelectedIDs: c22e0000
+    m_LastClickedID: 11970
     m_ExpandedIDs: 000000008e2d0000222e0000482e0000c22e0000de31000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0

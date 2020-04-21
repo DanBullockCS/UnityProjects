@@ -7,12 +7,12 @@ using UnityEngine.UI;
 using TMPro;
 
 public class CashCount : MonoBehaviour {
-    public static int numCash = 10000;
+    public static int numCash = 2820; // You start with exactly enough money to buy all the chips at the front desk
     TMP_Text cashText;
 
     // Show counts
     void Start() {
-        numCash = 10000;
+        numCash = 2820;
         cashText = GetComponent<TMP_Text>();
     }
 

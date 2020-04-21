@@ -9,7 +9,7 @@ public class BGMusicNoDestroy : MonoBehaviour {
 
     void Awake() {
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Music");
-        if(objects.Length > 1) {
+        if (objects.Length > 1) {
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(this.gameObject);
@@ -17,7 +17,7 @@ public class BGMusicNoDestroy : MonoBehaviour {
 
     void Update() {
         sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "MainGame") {
+        if (sceneName == "MainGame" || sceneName == "EndGame") {
             MainMenuMusic.mute = true;
         } else {
             MainMenuMusic.mute = false;

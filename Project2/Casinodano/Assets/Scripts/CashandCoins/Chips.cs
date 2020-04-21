@@ -11,28 +11,45 @@ public class Chips : MonoBehaviour {
 
     void OnMouseDown() {
         if (Vector3.Distance(GameObject.Find("Player").transform.position, transform.position) <= 5.0f) {
-            // Play sound effect
-            ac.PlayOneShot(ac.clip);
-            // Do exchange based on white chip player clicked on
+            // Do exchange based on chip player clicked on
             if (CashCount.numCash > 0) {
                 if (this.name == "CasinoChipsWhite") {
-                    ChipCount.numChips += 1;
-                    CashCount.numCash -= 1;
+                    // If there are still chips left on the table
+                    if (transform.childCount > 0) {
+                        Destroy(this.GetComponent<Transform>().GetChild(0).gameObject); // Destroy that chip
+                        ac.PlayOneShot(ac.clip);                                        // Play the sound
+                        ChipCount.numChips += 1;                                        // Complete the transaction
+                        CashCount.numCash -= 1;
+                    }
                 } else if (this.name == "CasinoChipsRed") {
-                    ChipCount.numChips += 5;
-                    CashCount.numCash -= 5;
+                    if (transform.childCount > 0) {
+                        Destroy(this.GetComponent<Transform>().GetChild(0).gameObject);
+                        ac.PlayOneShot(ac.clip);
+                        ChipCount.numChips += 5;
+                        CashCount.numCash -= 5;
+                    }
                 } else if (this.name == "CasinoChipsBlue") {
-                    ChipCount.numChips += 10;
-                    CashCount.numCash -= 10;
+                    if (transform.childCount > 0) {
+                        Destroy(this.GetComponent<Transform>().GetChild(0).gameObject);
+                        ac.PlayOneShot(ac.clip);
+                        ChipCount.numChips += 10;
+                        CashCount.numCash -= 10;
+                    }
                 } else if (this.name == "CasinoChipsGreen") {
-                    ChipCount.numChips += 25;
-                    CashCount.numCash -= 25;
+                    if (transform.childCount > 0) {
+                        Destroy(this.GetComponent<Transform>().GetChild(0).gameObject);
+                        ac.PlayOneShot(ac.clip);
+                        ChipCount.numChips += 25;
+                        CashCount.numCash -= 25;
+                    }
                 } else if (this.name == "CasinoChipsBlack") {
-                    ChipCount.numChips += 100;
-                    CashCount.numCash -= 100;
+                    if (transform.childCount > 0) {
+                        Destroy(this.GetComponent<Transform>().GetChild(0).gameObject);
+                        ac.PlayOneShot(ac.clip);
+                        ChipCount.numChips += 100;
+                        CashCount.numCash -= 100;
+                    }
                 }
-            } else {
-                // Add an error sound effect here
             }
             
         }

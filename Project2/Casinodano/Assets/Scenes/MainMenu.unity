@@ -237,8 +237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 278.5, y: 437.1}
-  m_SizeDelta: {x: -649.3, y: -980.1}
+  m_AnchoredPosition: {x: 278.5, y: 437.905}
+  m_SizeDelta: {x: -649.3, y: -978.49005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748791873
 MonoBehaviour:
@@ -539,7 +539,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 315, y: 445.8}
-  m_SizeDelta: {x: 1032.5, y: 144.6}
+  m_SizeDelta: {x: 641.3, y: 89.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926513389
 MonoBehaviour:
@@ -588,8 +588,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 125
+  m_fontSizeBase: 125
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1351,8 +1351,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1750487774}
-  - component: {fileID: 1750487773}
   - component: {fileID: 1750487775}
+  - component: {fileID: 1750487773}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Music
