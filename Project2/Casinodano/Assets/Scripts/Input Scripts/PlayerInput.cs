@@ -29,7 +29,7 @@ public class PlayerInput : MonoBehaviour {
         // Adding Sprinting
         bool isShiftKeyDown = Input.GetKey(KeyCode.LeftShift);
         if (isShiftKeyDown) {
-            sprint = Mathf.Sqrt(10.0f);
+            sprint = Mathf.Sqrt(2.5f);
         } else {
             sprint = 1;
         }
@@ -45,7 +45,11 @@ public class PlayerInput : MonoBehaviour {
         float x = Input.GetAxis("Horizontal") * sprint;
         float z = Input.GetAxis("Vertical") * sprint;
 
-        anim.SetFloat("Speed", z);
+        // Animation variables for WASD movement
+        anim.SetFloat("Forward", z);
+        anim.SetFloat("Backward", -z);
+        anim.SetFloat("Right", x);
+        anim.SetFloat("Left", -x);
 
         Vector3 moveDirectionVector = transform.right * x + transform.forward * z;
 
@@ -63,14 +67,14 @@ public class PlayerInput : MonoBehaviour {
             charController.height = 1.0f;
         } else {
             anim.SetBool("isCrouching", false);
-            // Gradually add back the height until it's back to 2.25f (Original player height)
-            if (charController.height <= 2.25f) {
+            // Gradually add back the height until it's back to 1.8f (Original player height)
+            if (charController.height < 1.8f) {
                 charController.height += 0.05f;
             }
         }
 
+        // Movement with gravity
         velocity.y += gravity * Time.deltaTime;
-
         charController.Move(velocity * Time.deltaTime); // Using 1/2*gravity*time^2 (Gravity formula)
     }
 }
