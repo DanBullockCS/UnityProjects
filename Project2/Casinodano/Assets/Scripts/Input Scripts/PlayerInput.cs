@@ -7,7 +7,8 @@ public class PlayerInput : MonoBehaviour {
     [SerializeField] private float moveSpeed = 5.0f;
 
     private CharacterController charController;
-    
+    private Animator anim;
+
     private float sprint;
     private float gravity = -9.81f * 2f;
     private float jumpHeight = 1f;
@@ -16,11 +17,12 @@ public class PlayerInput : MonoBehaviour {
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
-    Vector3 velocity;
+    private Vector3 velocity;
     private bool isGrounded;
 
     void Start() {
         charController = GetComponent<CharacterController>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update() {
@@ -43,6 +45,8 @@ public class PlayerInput : MonoBehaviour {
         float x = Input.GetAxis("Horizontal") * sprint;
         float z = Input.GetAxis("Vertical") * sprint;
 
+        anim.SetFloat("Speed", z);
+
         Vector3 moveDirectionVector = transform.right * x + transform.forward * z;
 
         // Move the character controller in using the move vector (Simplemove ignores Y axis)
@@ -50,12 +54,15 @@ public class PlayerInput : MonoBehaviour {
 
         // Jumping
         if (Input.GetButtonDown("Jump") && isGrounded) {
+            anim.SetTrigger("Jump");
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
         // Crouching
         if (Input.GetKey(KeyCode.LeftControl)) {
+            anim.SetBool("isCrouching", true);
             charController.height = 1.0f;
         } else {
+            anim.SetBool("isCrouching", false);
             // Gradually add back the height until it's back to 2.25f (Original player height)
             if (charController.height <= 2.25f) {
                 charController.height += 0.05f;
