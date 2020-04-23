@@ -15,6 +15,9 @@ public class MainMenu : MonoBehaviour {
     public void GoToMainMenu() {
         SceneManager.LoadScene("MainMenu");
     }
+    public void GoToHowToPlay() {
+        SceneManager.LoadScene("HowToPlay");
+    }
     public void QuitGame() {
         #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
