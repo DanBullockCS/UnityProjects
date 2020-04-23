@@ -19,7 +19,7 @@ public class MouseInput : MonoBehaviour {
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90.0f, 90.0f); // Block looking too far up or down
+        xRotation = Mathf.Clamp(xRotation, -90.0f, 47.646f); // Block looking too far up or down
 
         transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
         playerBody.Rotate(Vector3.up * mouseX);
