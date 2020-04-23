@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Shows a phone message when you click on the phone at the start of the game
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

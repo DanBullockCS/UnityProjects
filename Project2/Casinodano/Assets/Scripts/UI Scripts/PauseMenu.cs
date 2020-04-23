@@ -1,12 +1,10 @@
-﻿// Controling the Pause Menu during the RunGame scene
-
+﻿// Controling the Pause Menu during the game
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
-{
+public class PauseMenu : MonoBehaviour {
     public static bool isPaused = false;
     public GameObject pauseCanvas;
     public GameObject MainCamera;

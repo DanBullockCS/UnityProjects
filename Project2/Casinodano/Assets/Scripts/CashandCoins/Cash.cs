@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Keeps track of the cash and win condition of the whole game
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿// Plays audio when you press on an object that has this script
+using UnityEngine;
 using System.Collections;
 
 public class AudioPlay : MonoBehaviour {

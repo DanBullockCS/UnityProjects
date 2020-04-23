@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Set on each machine so player can play on any one
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ public class SelectMachine : MonoBehaviour {
 
     void Update() {
         // You can also leave the machine with the escape key
-        if (Input.GetKeyDown("escape")) {
+        if (Input.GetKeyDown("space")) {
             leaveMachine();
         }
     }

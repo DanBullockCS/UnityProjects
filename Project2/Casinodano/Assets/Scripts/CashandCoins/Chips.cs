@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Keeps track of chips and picking them up at the front counter
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
